@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Your Robot</title>
+  </head>
+  <body>
+    <p>
+      Edit your robot's information below:
+    </p>
+    <form class="robot-edit" action="/robots/<%=@robot.id%>" method="post">
+      <input type="hidden" name="_method" value="put">
+
+
+        <p>What is your new robot's name?</p>
+        <input type="text" name="robot[name]" value="<%=@robot.name%>"><br>
+        <p>In what town was it manufactured?</p>
+        <input type="text" name="robot[city]" value="<%=@robot.city%>"><br>
+        <p>In which state?</p>
+        <input type="text" name="robot[state]" value="<%=@robot.state%>"><br>
+        <p>What day in the past would you like this robot's birthday to have been?</p>
+        <input type="text" name="robot[birthdate]" value="<%=@robot.birthdate%>"><br>
+        <p> Where will this robot work? </p>
+        <input type="text" name="robot[department]" value="<%=@robot.department%>"><br>
+        <p> Time of the order: </p>
+        <input type="text" name="robot[date_hired]" value="<%=@robot.date_hired%>"><br>
+        <input type="submit" name="Submit Form">
+    </form>
+  </body>
+</html>

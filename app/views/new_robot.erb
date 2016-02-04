@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Make your own new robot here!</title>
+  </head>
+  <body>
+    <h1>Fill out the requisition form below to order your new robot:</h1>
+    <div class="form-group col-md-6">
+      <form action="/robots" method="post">
+        <p>What is your new robot's name?</p>
+        <input type="text" name="robot[name]" placeholder="Robot's Name"><br>
+        <p>In what town was it manufactured?</p>
+        <input type="text" name="robot[city]" placeholder="City"><br>
+        <p>In which state?</p>
+        <input type="text" name="robot[state]" placeholder="State"><br>
+        <p>What day in the past would you like this robot's birthday to have been?</p>
+        <input type="text" name="robot[birthdate]" placeholder="Birthday"><br>
+        <p> Where will this robot work? </p>
+        <input type="text" name="robot[department]" placeholder="Department"><br>
+        <p> Time of the order: </p>
+        <input type="text" name="robot[date_hired]" value="<%= Time.now.strftime("%m-%d-%y") %>"><br>
+        <input type="submit" name="Submit Form">
+      </form>
+    </div>
+  </body>
+</html>
+
+
+<!-- <p>
+  Add a new task to be done to the list:
+</p>
+<div class="form-group col-md-6">
+  <form action="/tasks" method="post">
+    <input type="text" class="form-control" name="task[title]" placeholder="Task"/><br>
+    <textarea class="form-control" name="task[description]" placeholder="Description of task"></textarea><br>
+    <input type="submit"/>
+  </form>
+</div> -->
+<!-- @name = data["name"]
+@city = data["city"]
+@state = data["state"]
+@avatar = data["avatar"]
+@birthdate = data["birthdate"]
+@date_hired = data["date_hired"]
+@department = data["department"] -->

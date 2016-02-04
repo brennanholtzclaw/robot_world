@@ -1,0 +1,51 @@
+---
+robots:
+- id: 1
+  name: frank
+  city: dflskj
+  state: fdk
+  avatar: 
+  birthdate: fdj
+  date_hired: 02-01-01
+  department: kdfj
+- id: 2
+  name: Fred
+  city: Columbia
+  state: MO
+  avatar: 
+  birthdate: 8-16-18
+  date_hired: 02-03-16
+  department: Entertainment
+- id: 3
+  name: Jayne
+  city: Columbia
+  state: MO
+  avatar: 
+  birthdate: 8-16-18
+  date_hired: 02-03-16
+  department: Entertainment
+- id: 4
+  name: Walsh
+  city: Columbia
+  state: MO
+  avatar: 
+  birthdate: 8-16-18
+  date_hired: 02-03-16
+  department: Entertainment
+- id: 5
+  name: Bender
+  city: Columbia
+  state: MO
+  avatar: 
+  birthdate: 8-16-18
+  date_hired: 02-03-16
+  department: Entertainment
+- id: 6
+  name: bending unit
+  city: Columbia
+  state: MO
+  avatar: 
+  birthdate: 8-16-18
+  date_hired: 02-03-16
+  department: Entertainment
+total: 8

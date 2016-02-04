@@ -1,0 +1,13 @@
+<a href="/robots">All Robots Index</a>
+
+<h1><%= @robot.name %></h1>
+  <img id="avatar" src="https://robohash.org/<%= @robot.name %>">
+<p>
+  <%= @robot.name %> was created in <%= @robot.city %>, <%= @robot.state %>.
+</p>
+<p>
+  This robot was built on <%= @robot.birthdate %>, and commissioned for work on <%= @robot.date_hired %>.
+</p>
+<p>
+  <%= @robot.name %> has been commissioned to work in the <%= @robot.department %> department.
+</p>
