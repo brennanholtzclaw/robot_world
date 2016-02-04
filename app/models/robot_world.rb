@@ -13,10 +13,10 @@ class RobotWorld
       database["total"] ||= 0
       database["total"] += 1
       database["robots"] << { "id" => database["total"], "name" => robot[:name],
-                              "city" => robot["city"], "state" => robot["state"],
-                              "avatar" => nil, "birthdate" => robot["birthdate"],
-                              "date_hired" => robot["date_hired"],
-                              "department" => robot["department"]}
+                              "city" => robot[:city], "state" => robot[:state],
+                              "avatar" => nil, "birthdate" => robot[:birthdate],
+                              "date_hired" => robot[:date_hired],
+                              "department" => robot[:department]}
 
     end
   end
