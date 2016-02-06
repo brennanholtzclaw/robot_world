@@ -6,10 +6,10 @@
     <title>Robot World Index</title>
   </head>
   <body>
-    <h1 class="row" >Here is all of the Robots currently on Robot World</h1>
+    <h1 class="row" id="all-robots" >Here is all of the Robots currently on Robot World</h1>
       <% @robots.each do |robot| %>
-        <h3> <%= robot.id %>: <a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
-        <a class="btn btn-default" href="/robots/<%= robot.id %>/edit" role="button">Edit this Task</a>
+        <h3 class="robots"> <%= robot.id %>: <a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
+        <a class="btn btn-default" href="/robots/<%= robot.id %>/edit" role="button">Edit this Robot's Information</a>
         <form action="/robots/<%= robot.id %>" method="post">
           <input type="hidden" name="_method" value="delete">
           <input type="submit" value="Delete this Robot" class="delete-button">

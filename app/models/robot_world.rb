@@ -1,4 +1,4 @@
-require 'yaml/store'
+# require 'yaml/store'
 
 class RobotWorld
   attr_reader :database
@@ -8,6 +8,7 @@ class RobotWorld
   end
 
   def create(robot)
+    # binding.pry
     database.from(:robots).insert(robot)
     # database.transaction do
     #   database["robots"] ||= []
