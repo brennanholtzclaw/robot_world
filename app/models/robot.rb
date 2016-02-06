@@ -1,7 +1,8 @@
 class Robot
   attr_reader :name, :city, :state,
               :avatar, :birthdate,
-              :date_hired, :department, :id
+              :date_hired, :department,
+              :id, :message
 
   def initialize(data)
     @id = data[:id]
@@ -12,6 +13,7 @@ class Robot
     @birthdate = data[:birthdate]
     @date_hired = data[:date_hired]
     @department = data[:department]
+    @message = "My name is #{name} and I am programmed for #{department}.".unpack("B*").first
   end
 
 

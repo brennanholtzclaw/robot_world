@@ -6,6 +6,9 @@
     <title>Robot World Index</title>
   </head>
   <body>
+    <p>
+      <a href="/robots/new">Make a new robot of your own!</a></li>
+    </p>
     <h1 class="row" id="all-robots" >Here is all of the Robots currently on Robot World</h1>
       <% @robots.each do |robot| %>
         <h3 class="robots"> <%= robot.id %>: <a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
