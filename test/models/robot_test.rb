@@ -3,9 +3,9 @@ require_relative '../test_helper'
 class RobotTest < Minitest::Test
 
   def test_data_is_assigned_correctly
-    data =  {"name"=>"frank", "city"=>"denver", "state"=>"CO",
-            "birthdate"=>"09-29-12", "department"=>"history",
-            "date_hired"=>"02-01-01"}
+    data =  {:name=>"frank", :city=>"denver", :state=>"CO", :avatar => nil,
+            :birthdate=>"09-29-12", :department=>"history",
+            :date_hired=>"02-01-01"}
 
     robot = Robot.new(data)
 
