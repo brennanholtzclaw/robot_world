@@ -41,7 +41,7 @@ class RobotWorld
   end
 
   def find(id)
-    robots = dataset.where(:id => id).to_a.first
+    robot = dataset.where(:id => id).to_a.first
     Robot.new(robot)
     # Robot.new(raw_task(id))
   end

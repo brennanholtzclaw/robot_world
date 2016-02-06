@@ -63,11 +63,12 @@ class RobotWorldTest < Minitest::Test
 
     robot_world.create(data)
     robot_world.create(data2)
+    robots = robot_world.all
     robot1 = robot_world.all[-2]
     robot2 = robot_world.all[-1]
 
-    assert_equal "longmont", robot_world.find(2).city
-    assert_equal "history", robot_world.find(1).department
+    assert_equal "longmont", robot_world.find(robot2.id).city
+    assert_equal "history", robot_world.find(robot1.id).department
   end
 
   def test_it_can_update_a_robots_information
@@ -90,7 +91,7 @@ class RobotWorldTest < Minitest::Test
     assert_equal "frank", robot1.name
     refute_equal "phil", robot1.name
 
-    robot_world.update(data2, 1)
+    robot_world.update(data2, robot1.id)
     robot1 = robot_world.all.first
 
     assert_equal "phil", robot1.name
@@ -114,7 +115,8 @@ class RobotWorldTest < Minitest::Test
 
     robot_world.create(data)
     robot_world.create(data2)
-    robot_world.delete(1)
+    robot = robot_world.all.first
+    robot_world.delete(robot.id)
 
     assert_equal 1, robot_world.all.count
     assert_equal "phil", robot_world.all.first.name
