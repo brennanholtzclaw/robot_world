@@ -1,14 +1,19 @@
-<a href="/robots">All Robots Index</a>
-
-<h1><%= @robot.name %></h1>
-  <img id="avatar" src="https://robohash.org/<%= @robot.name %>">
-  <!-- <figcaption><%= @robot.message %></figcaption> -->
-<p>
-  <%= @robot.name %> was created in <%= @robot.city %>, <%= @robot.state %>.
-</p>
-<p>
-  This robot was built on <%= @robot.birthdate %>, and commissioned for work on <%= @robot.date_hired %>.
-</p>
-<p>
-  <%= @robot.name %> has been commissioned to work in the <%= @robot.department %> department.
-</p>
+<body class="robo-prof-body">
+<div class="container">
+  <div class="new-bot navbar navbar-default navbar-fixed-top navbard-brand"><br>
+    <a href="/robots" class="text-muted navbar-left">All Robots Index</a>
+  </div>
+  <div class="robo-page container-fluid col-md-4">
+    <h1 class="robo-name"><%= @robot.name %></h1>
+      <img class="image-circle" id="avatar" src="https://robohash.org/<%= @robot.name %>">
+      <!-- <figcaption><%= @robot.message %></figcaption> -->
+    <div class="bio-info well">
+      <p class="bio-text">
+        <%= @robot.name %> was created in <%= @robot.city %>, <%= @robot.state %>. <br>
+        This robot was built on <%= @robot.birthdate %>, and commissioned for work on <%= @robot.date_hired %>.<br>
+        <%= @robot.name %> has been commissioned to work in the <%= @robot.department %> department.<br>
+      </p>
+    </div>
+  </div>
+</div>
+</body>
