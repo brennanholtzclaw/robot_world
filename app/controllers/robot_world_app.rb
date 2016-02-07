@@ -5,6 +5,7 @@ class RobotWorldApp < Sinatra::Base
   set :method_override, true
 
   get '/' do
+    @robot_world = robot_world
     erb :dashboard
   end
 
