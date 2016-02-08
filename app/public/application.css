@@ -1,3 +1,15 @@
+.dashboard-body {
+  background-image: ("~/turing/2module/robot_world/images/robo_skyline.jpg");
+}
+
+.index-body {
+  background-image: ("robo_skyline.jpg");
+}
+
+.well {
+  rgba(228, 228, 228, 0.5)
+}
+
 .bio-info {
   background: rgb(89, 173, 109) ;
 }
